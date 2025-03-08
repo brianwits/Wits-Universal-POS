@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wits Universal POS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Wits POS</h1>
+            </div>
+            <ul class="menu">
+                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Sales</a></li>
+                <li><a href="#"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Customers</a></li>
+                <li><a href="#"><i class="fas fa-user-tie"></i> Employees</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="img/user-placeholder.png" alt="User Avatar">
+                <div>
+                    <h3>Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </header>
+
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon sales">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Sales</h3>
+                            <p class="stat-value">$12,345</p>
+                            <p class="stat-change positive">+15% <span>from last week</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orders">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Orders</h3>
+                            <p class="stat-value">142</p>
+                            <p class="stat-change positive">+8% <span>from last week</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon customers">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Customers</h3>
+                            <p class="stat-value">64</p>
+                            <p class="stat-change positive">+12% <span>from last week</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon inventory">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Low Inventory</h3>
+                            <p class="stat-value">12 items</p>
+                            <p class="stat-change negative">+3 <span>from last week</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <h3>Sales Overview</h3>
+                        <div class="chart-placeholder">
+                            <p>Sales chart will be displayed here</p>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Top Selling Products</h3>
+                        <div class="chart-placeholder">
+                            <p>Product chart will be displayed here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-transactions">
+                    <h3>Recent Transactions</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#TRX-1234</td>
+                                <td>John Doe</td>
+                                <td>Today, 14:23</td>
+                                <td>$125.00</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-1233</td>
+                                <td>Jane Smith</td>
+                                <td>Today, 13:45</td>
+                                <td>$75.50</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-1232</td>
+                                <td>Robert Johnson</td>
+                                <td>Today, 11:20</td>
+                                <td>$246.00</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-1231</td>
+                                <td>Emily Davis</td>
+                                <td>Today, 10:15</td>
+                                <td>$89.25</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-1230</td>
+                                <td>Michael Wilson</td>
+                                <td>Yesterday, 16:42</td>
+                                <td>$145.80</td>
+                                <td><span class="status failed">Failed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
